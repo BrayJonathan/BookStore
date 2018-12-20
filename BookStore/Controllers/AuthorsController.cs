@@ -22,7 +22,7 @@ namespace BookStore.Controllers
         public IQueryable<Author> GetAuthors()
         {
             Configuration.Services.GetTraceWriter().Error(
-                Request, "ValuesController", "On trace l'appel de la methode Get()");
+                Request, "AuthorsController", "On trace l'appel de la methode Get()");
 
             return db.Authors;
         }
